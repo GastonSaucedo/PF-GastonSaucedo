@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// 1) Importar librerias React y ReactDOM
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import React from "react"
+// Define que es un componente y como los componentes funcionan juntos
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import ReactDOM from "react-dom/client"
+// sabe como hacer que un componente aparezca en la pantalla del usuario
+
+
+// 2) Obtener una referencia al div con id= root
+const el = document.getElementById("root")
+
+// 3) Le decimos a react que tome control del elemento
+const root = ReactDOM.createRoot(el)
+
+// 4) Creamos un componente 
+function App(){
+    return <h1>Hola desde react</h1>
+}
+
+// 5) Mostrar el componente en la pantalla del usuario
+root.render(<App/>)
