@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    width: 100%;
+    height: 5vw;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: #4E515C;
+    color: whitesmoke;
+}
+
+button{
+    width: 9rem;
+    background-color: #21251F;
+    color: whitesmoke;
+    padding: 1em;
+    margin: 0.5em;
+    border: solid 2px #C8F560;
+    border-radius: 5px;
+}
+
+.carrito-compras{
+    display: flex;
+    background-color: #21251F;
+    padding: 1rem;
+    border: solid 2px #C8F560;
+    border-radius: 50px 50px;
+}
+
+img{
+    width: 1.5rem;
+}
