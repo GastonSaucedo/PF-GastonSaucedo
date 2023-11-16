@@ -1,34 +1,62 @@
-nav {
-    display: flex;
-    width: 100%;
-    height: 5vw;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    background-color: #4E515C;
-    color: whitesmoke;
+@font-face {
+  font-family: "bebasneue";
+  src: url(../../fonts/bebasneue_regular.woff2);
 }
 
-button {
-    width: 9rem;
-    background-color: #21251F;
-    color: whitesmoke;
-    padding: 1em;
-    margin: 0.5em;
-    border: solid 2px #C8F560;
-    border-radius: 5px;
-    cursor: pointer;
+@font-face {
+  font-family: "broken";
+  src: url(../../fonts/broken-webfont.woff2);
+}
+
+@font-face {
+  font-family: "helveticaa";
+  src: url(../../fonts/helvetica.woff2);
+}
+
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 5vw;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background-color: #4E515C;
+  color: whitesmoke;
+  font-family: bebasneue;
+  font-size: 1.5rem;
+}
+
+.categorias {
+  width: 9rem;
+  background-color: #21251F;
+  color: whitesmoke;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: solid 2px #C8F560;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: bebasneue;
+  font-size: 1rem;
 }
 
 
 .carrito-compras {
-    display: flex;
-    background-color: #21251F;
-    padding: 1rem;
-    border: solid 2px #C8F560;
-    border-radius: 50px 50px;
+  display: flex;
+  background-color: #21251F;
+  padding: 0.5rem;
+  border: solid 2px #C8F560;
+  border-radius: 20px 20px;
+  font-family: bebasneue;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: bebasneue;
+  font-size: 1.5rem;
 }
 
 img {
-    width: 1.5rem;
+  width: 1.5rem;
+  margin-right: 15px;
 }

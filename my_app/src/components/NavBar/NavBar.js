@@ -5,17 +5,17 @@ const NavBar = () => {
     return (
         <nav>
             <h3>E-Commerce</h3>
-            <div>
-                <button>Ver Todo</button>
-                <button>Equipos Armados</button>
-                <button>Consolas</button>
-                <button>Juegos</button>
+            <div >
+                <button className="categorias">Ver Todo</button>
+                <button className="categorias">Equipos Armados</button>
+                <button className="categorias">Consolas</button>
+                <button className="categorias">Juegos</button>
 
             </div>
-            <div className="carrito-compras">
+            <button className="carrito-compras">
                 <img src={cart} alt="cart-widget"/>              
                 <span>0</span>
-            </div>
+            </button>
 
         </nav>
     )
