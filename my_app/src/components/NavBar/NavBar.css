@@ -9,7 +9,7 @@ nav {
     color: whitesmoke;
 }
 
-button{
+button {
     width: 9rem;
     background-color: #21251F;
     color: whitesmoke;
@@ -17,9 +17,11 @@ button{
     margin: 0.5em;
     border: solid 2px #C8F560;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.carrito-compras{
+
+.carrito-compras {
     display: flex;
     background-color: #21251F;
     padding: 1rem;
@@ -27,6 +29,6 @@ button{
     border-radius: 50px 50px;
 }
 
-img{
+img {
     width: 1.5rem;
 }

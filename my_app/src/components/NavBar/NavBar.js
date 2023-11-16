@@ -6,6 +6,7 @@ const NavBar = () => {
         <nav>
             <h3>E-Commerce</h3>
             <div>
+                <button>Ver Todo</button>
                 <button>Equipos Armados</button>
                 <button>Consolas</button>
                 <button>Juegos</button>
