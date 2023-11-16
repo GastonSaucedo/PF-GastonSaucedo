@@ -1,4 +1,4 @@
-import cart from "./assets/cart.svg"
+import CartWidget from "../CartWidget/CartWidget"
 import "./NavBar.css"
 
 const NavBar = () => {
@@ -12,11 +12,9 @@ const NavBar = () => {
                 <button className="categorias">Juegos</button>
 
             </div>
-            <button className="carrito-compras">
-                <img src={cart} alt="cart-widget"/>              
-                <span>0</span>
-            </button>
-
+            <div>
+                <CartWidget />
+            </div>
         </nav>
     )
 }

@@ -2,6 +2,7 @@ import "bulma/css/bulma.css"
 import "./App.css"
 import NavBar from "./components/NavBar/NavBar"
 import ProfileCard from "./components/ProfileCard"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 
 import armado1 from "./img/armado1.png"
 import armado2 from "./img/armado2.png"
@@ -14,7 +15,8 @@ function App() {
     return (
         <div className="App">
             <NavBar />
-            {/* <ItemListContainer/> */}
+
+
             <section className="hero is-primary fondo-hero">
                 <div className="hero-body">
                     <h2 className="title">PRODUCTOS</h2>
@@ -39,6 +41,8 @@ function App() {
                     </div>
                 </div>
             </div>
+
+            <ItemListContainer greeting="Gracias por visitarnos" />
         </div>
     )
 }
