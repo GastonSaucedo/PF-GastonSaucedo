@@ -11,6 +11,11 @@ nav {
   font-size: 1.5rem;
 }
 
+h3{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 .categorias {
   width: 9rem;
   background-color: #21251F;
