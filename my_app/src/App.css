@@ -2,10 +2,12 @@
   font-family: "bebasneue";
   src: url(./fonts/bebasneue_regular.woff2);
 }
+
 @font-face {
   font-family: "broken";
   src: url(./fonts/broken-webfont.woff2);
 }
+
 @font-face {
   font-family: "helveticaa";
   src: url(./fonts/helvetica.woff2);
@@ -13,18 +15,18 @@
 
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 
-  }
+}
 
-  body{
-    height: 100vh;
-    background-color: #21251F;
-  }
+body {
+  height: 100vh;
+  background-color: #21251F;
+}
 
-  .fondo-hero{
-    background-color: #21251F !important;
-  }
+.fondo-hero {
+  background-color: #21251F !important;
+}

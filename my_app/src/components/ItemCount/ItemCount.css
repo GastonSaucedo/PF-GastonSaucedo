@@ -1,0 +1,12 @@
+.contador{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.controles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}

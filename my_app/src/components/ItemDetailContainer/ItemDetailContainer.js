@@ -1,12 +1,16 @@
-import { useState, useEffect } from "react";
-import { getProductByID } from "../../asyncMock";
-import ItemDetail from "../ItemDetail/ItemDetail";
+import "bulma/css/bulma.css"
+import { useState, useEffect } from "react"
+import { getProductByID } from "../../asyncMock"
+import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom";
+
+
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
-    const { itemId } = useParams()
 
+    const { itemId } = useParams()
+    
     useEffect(() => {
         getProductByID(itemId)
             .then(response => {

@@ -1,0 +1,46 @@
+.tarjetadetalles {
+    width: 90%;
+
+    margin: auto;
+}
+
+.CardItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #4E515C;
+    margin: 2em;
+
+
+}
+
+.ItemImg {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.ItemDetails {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.ItemCounter {
+    display: flex;
+    margin: auto;
+}
+
+.ItemName {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.Info {
+    font-size: 1rem;
+    color: whitesmoke;
+    margin: 1em 0;
+}

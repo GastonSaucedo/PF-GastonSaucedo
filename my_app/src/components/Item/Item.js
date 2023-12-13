@@ -1,32 +1,31 @@
+import { Link } from "react-router-dom";
 import "bulma/css/bulma.css"
+import "./Item.css"
+
+
 
 const Item = ({ id, name, img, price, stock }) => {
     return (
-        <article className="CardItem">
-            <div className="card" />
-            <header className="Header">
-                <h2 className="ItemHeader">
-                    {name}
-                </h2>
-            </header>
-            <picture>
-                <img src={img} alt={name} className="ItemImg" />
-            </picture>
 
-            <section>
-                <p className="Info">
-                    Precio: ${price}
-                </p>
-                <p className="Info">
-                    Stock disponible: {stock}
 
-                </p>
+        <article className="column is-3">
+            <section className="card">
+                <div className="card-image">
+                    <figure className="image">
+                        <img src={img} alt={name} />
+                    </figure>
+                </div>
+                <div className="media-content">
+                    <p className="title is-4">{name}</p>
+                    <p className="subtitle is-6">${price}</p>
+                    <p className="subtitle is-6">stock disponible: {stock}</p>
+                    <Link to={`/item/${id}`}><button className="boton">VER DETALLES</button></Link>
+                </div>
+
             </section>
-            <footer className="ItemFooter">
-                <link to={`/item/${id}`} className="option"> ver detalle</link>
-            </footer>
-            <div />
         </article>
+
+
     )
 }
 

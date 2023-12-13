@@ -1,4 +1,4 @@
-
+import "bulma/css/bulma.css"
 import { useState, useEffect } from "react";
 import { getProducts, getProductsByCategory } from "../../asyncMock"
 import ItemList from "../ItemList/ItemList";
@@ -6,9 +6,9 @@ import { useParams } from "react-router-dom";
 
 
 
-const ItemListContainer = () => {
+const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
-    const {categoryId} = useParams()
+    const { categoryId } = useParams()
 
     useEffect(() => {
         const asyncFunc = categoryId ? getProductsByCategory : getProducts
@@ -24,6 +24,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
+            <h1 className="saludo">{greeting}</h1>
             <ItemList products={products} />
 
         </div>
