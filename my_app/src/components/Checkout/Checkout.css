@@ -1,0 +1,24 @@
+.TextoCargaForm {
+    color: white;
+    font-family: bebasneue;
+    font-size: 4rem;
+    margin: 0.5em;
+    text-align: center;
+}
+
+.textoForm{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtituloForm{
+    color: rgb(201, 201, 201);
+    font-size: 1.2rem;
+}
+
+.botonVolver{
+    margin: 2em;
+}

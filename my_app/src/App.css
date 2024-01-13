@@ -22,11 +22,13 @@
 
 }
 
-body {
+.App {
   height: 100vh;
   background-color: #21251F;
 }
 
-.fondo-hero {
-  background-color: #21251F !important;
+.button{
+  background-color: #C8F560 !important;
+  color: #21251F !important;
 }
+

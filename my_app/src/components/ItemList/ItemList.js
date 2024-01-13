@@ -4,12 +4,11 @@ import "./ItemList.css"
 
 const ItemList = ({ products }) => {
   return (
-    <div className='container'>
-      <div className="ListGroup columns">
+
+      <div className="listGroup">
         {products.map(prod => <Item key={prod.id}{...prod} />)}
       </div>
 
-    </div>
 
 
   )

@@ -1,10 +1,30 @@
 import ItemCount from "../ItemCount/ItemCount"
 import "./ItemDetail.css"
+import {useContext, useState } from "react"
+import { Link } from 'react-router-dom'
+
+import { CartContext } from "../../context/CartContext"
+
 
 
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
+    const [quantityAdded, setQuantityAdded] = useState(0)
+
+    const { addItem } = useContext(CartContext)
+
+    const handleOnAdd = (quantity) => {
+        setQuantityAdded(quantity)
+
+        const item = {
+            id, name, price
+        }
+
+        addItem(item, quantity)
+
+    }
+
     return (
-        <div className="tarjeta">
+        <div className="detallesTarjeta">
             <article className="CardItem">
                 <header className="Header">
                     <picture>
@@ -18,7 +38,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                         {name}
                     </h2>
                     <p className="Info">
-                        Descripcion: <br/>{description}
+                        Descripcion: <br />{description}
                     </p>
                     <p className="Info">
                         Precio: ${price}
@@ -26,10 +46,24 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                     <p className="Info">
                         Stock disponible: {stock}
                     </p>
-                    <div className="ItemCounter"><ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log("cantidad Agregada", quantity)} /></div>
+                    <footer className="ItemFooter">
+                        {
+                            quantityAdded > 0 ? (
+                                <h3>Producto agregado al carrito</h3>
+                            ) : (
+                                <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
+                            )
+                        }
+
+
+                    </footer>
+                    <div>
+                        <Link to='/' className="button is-primary">Volver</Link>
+                    </div>
                 </section>
             </article>
         </div>
+
     )
 }
 

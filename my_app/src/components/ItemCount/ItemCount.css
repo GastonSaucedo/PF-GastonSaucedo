@@ -10,3 +10,9 @@
     justify-content: space-around;
     margin-bottom: 1em;
 }
+
+.number{
+    color: white;
+    background-color: #21251F;
+    margin: auto;
+}

@@ -1,35 +1,42 @@
-.card{
+.tarjeta{
     display: flex;
-    width: 100%;
     flex-direction: column;
-    justify-content: center;
+    width: 200px;
     align-items: center;
     text-align: center;
+    margin: 0.5em;
+    border-radius: 10px;
     border: 4px solid #C8F560;
     background-color: #4E515C;
-    margin: 0.5em 0;
-    border-radius: 10px;
 }
-
-.title{
-    font-size: 1rem !important;
-    color: whitesmoke;
-}
-.subtitle{
-    font-size: 0.8rem !important;
-    color: whitesmoke;
-}
-
-.image{
-    width:fit-content;
+.imagen-tarjeta{
     background-color: white;
     margin: 1em;
     padding: 0.5em;
     border-radius: 10px;
+    height: 50%;
+}
+.contenido{
+    height: 40%;
+}
+
+.title{
+    display: block;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+.subtitle{
+    display: block;
+    font-size: 0.8rem;
+    color: whitesmoke;
 }
 
 
+
+
 .boton {
+    display: block;
+    height: 30%;
     width: 9rem;
     background-color: #21251F;
     color: whitesmoke;
@@ -40,4 +47,4 @@
     cursor: pointer;
     font-family: bebasneue;
     font-size: 1rem;
-  }
+}

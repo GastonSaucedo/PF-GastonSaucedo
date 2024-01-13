@@ -8,7 +8,7 @@ import {NavLink, Link} from "react-router-dom";
 const NavBar = () => {
     return (
         <nav>
-            <Link to = '/'><h3>E-Commerce</h3></Link>
+            <Link to = '/'><h3>Lo De DASH - Ecomerce</h3></Link>
             
             <div className="Categories">
                              

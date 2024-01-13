@@ -1,6 +1,5 @@
-.tarjetadetalles {
-    width: 90%;
-
+.detallesTarjeta {
+    width: 100%;
     margin: auto;
 }
 
@@ -28,9 +27,11 @@
     color: whitesmoke;
 }
 
-.ItemCounter {
+.ItemFooter {
     display: flex;
-    margin: auto;
+    width: 20%;
+    align-self: center;
+    margin-top: 5em;
 }
 
 .ItemName {

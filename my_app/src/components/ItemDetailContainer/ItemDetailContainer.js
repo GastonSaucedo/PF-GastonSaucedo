@@ -1,24 +1,33 @@
 import "bulma/css/bulma.css"
 import { useState, useEffect } from "react"
-import { getProductByID } from "../../asyncMock"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom";
+
+import { getDoc, doc } from "firebase/firestore";
+import { db } from "../../config/firebase";
 
 
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
 
-    const { itemId } = useParams()
+    const {itemId } = useParams()
     
     useEffect(() => {
-        getProductByID(itemId)
-            .then(response => {
-                setProduct(response)
-            })
-            .catch(error => {
-                console.error(error)
-            })
+
+
+        const docRef = doc(db, 'productos', itemId)
+
+        getDoc(docRef)
+        .then(response => {
+            const data = response.data()
+            const productAdapted = {id: response.id, ...data}
+            setProduct(productAdapted)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+
     }, [itemId])
 
     return (

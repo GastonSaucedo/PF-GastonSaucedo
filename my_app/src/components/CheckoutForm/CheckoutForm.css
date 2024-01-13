@@ -1,0 +1,45 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+    background-color: #4E515C;
+    justify-content: center;
+    align-items: center;
+}
+
+.valorForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+    height: 2em;
+    margin: 3em auto;
+}
+
+.entrada{
+    width: 50em;
+    background-color:#21251F;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: solid #C8F560 1px;
+    padding: 1em;
+
+}
+
+.botonForm {
+    display: flex;
+    margin: 2em auto;
+}
+
+.nombreCheckout {
+    font-size: 5rem;
+    text-align: center;
+    color: whitesmoke;
+
+}
+.textoCheckout {
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(202, 202, 202);
+
+}

@@ -1,0 +1,9 @@
+.listGroup{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+height: 100%;
+background-color: #21251F;
+}

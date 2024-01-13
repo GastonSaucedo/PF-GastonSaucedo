@@ -1,0 +1,24 @@
+.productosAgregados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.productosAgregados:hover {
+    background-color: #21251F;
+}
+
+.botonX {
+    background: none;
+    color: whitesmoke;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botonX:hover {
+    color: red;
+    filter: drop-shadow(0 0 3px whitesmoke);
+}
